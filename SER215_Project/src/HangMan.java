@@ -54,6 +54,7 @@ public class HangMan {
 		//Action for a new window when start button is pressed
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//New frame, input code to call a new class where the game will be stored
 				
 			}
 		});
