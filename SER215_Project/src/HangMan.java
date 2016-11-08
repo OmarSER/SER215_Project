@@ -4,8 +4,10 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class HangMan {
@@ -47,13 +49,21 @@ public class HangMan {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+		//Start the game!!!
 		JButton btnStart = new JButton("Start");
-		btnStart.setFont(new Font("Castellar", Font.BOLD, 20));
-		btnStart.setBounds(63, 164, 120, 60);
+		//Action for a new window when start button is pressed
+		btnStart.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		btnStart.setFont(new Font("Castellar", Font.BOLD, 15));
+		btnStart.setBounds(176, 208, 99, 41);
 		frame.getContentPane().add(btnStart);
 		
+		//Tutorial for people who have never played
 		JButton btnNewButton = new JButton("Tutorial");
-		btnNewButton.setFont(new Font("Castellar", Font.BOLD, 12));
+		btnNewButton.setFont(new Font("Castellar", Font.BOLD, 10));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//-------------------------------------------------------------------------------------------------------------
@@ -89,12 +99,21 @@ public class HangMan {
 				
 			}
 		});
-		btnNewButton.setBounds(248, 164, 120, 60);
+		btnNewButton.setBounds(318, 209, 106, 41);
 		frame.getContentPane().add(btnNewButton);
 		
+		//Hang Man title button 
+		//Will refresh when clicked (undecided)
 		JButton btnHangMan = new JButton("Hang Man");
-		btnHangMan.setFont(new Font("Castellar", Font.BOLD, 40));
-		btnHangMan.setBounds(10, 11, 414, 120);
+		btnHangMan.setFont(new Font("Castellar", Font.BOLD, 20));
+		btnHangMan.setBounds(10, 11, 178, 46);
 		frame.getContentPane().add(btnHangMan);
+		
+		JLabel label = new JLabel("");
+		label.setForeground(Color.BLACK);
+		//Location for the background image
+		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\SER215_Project\\img\\home.png"));
+		label.setBounds(0, 0, 434, 261);
+		frame.getContentPane().add(label);
 	}
 }
