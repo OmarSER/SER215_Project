@@ -51,11 +51,13 @@ public class HangMan {
 		
 		//Start the game!!!
 		JButton btnStart = new JButton("Start");
+		btnStart.setBackground(Color.GRAY);
 		//Action for a new window when start button is pressed
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//New frame, input code to call a new class where the game will be stored
-				
+				Game nw = new Game();
+				nw.NewScreen();
 			}
 		});
 		btnStart.setFont(new Font("Castellar", Font.BOLD, 15));
@@ -64,6 +66,7 @@ public class HangMan {
 		
 		//Tutorial for people who have never played
 		JButton btnNewButton = new JButton("Tutorial");
+		btnNewButton.setBackground(Color.GRAY);
 		btnNewButton.setFont(new Font("Castellar", Font.BOLD, 10));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -79,25 +82,6 @@ public class HangMan {
 						+ "\n     - The word is guessed correctly, WINNER!!!\n"
 						+ "\n     - All the parts of the hangman are displayed, YOU LOSE!!!\n");
 				
-				/*
-				 * ------------------------------------------------------------------------------------------------------------
-				 * //This option reads the tutorial txt and displays it on the console
-				 * // Location of file to read
-				 * File file = new File("data.txt");
-				 * try {
-				 * 		
-				 * 		Scanner scanner = new Scanner(file);
-				 * 		while (scanner.hasNextLine()) {
-				 * 			String line = scanner.nextLine();
-				 * 			System.out.println(line);
-				 * 		}
-				 * 		scanner.close();
-				 * } catch (FileNotFoundException e) {
-				 * 		e.printStackTrace();
-				 * }
-				 * ------------------------------------------------------------------------------------------------------------
-				 * */
-				
 			}
 		});
 		btnNewButton.setBounds(318, 209, 106, 41);
@@ -106,6 +90,7 @@ public class HangMan {
 		//Hang Man title button 
 		//Will refresh when clicked (undecided)
 		JButton btnHangMan = new JButton("Hang Man");
+		btnHangMan.setBackground(Color.GRAY);
 		btnHangMan.setFont(new Font("Castellar", Font.BOLD, 20));
 		btnHangMan.setBounds(10, 11, 178, 46);
 		frame.getContentPane().add(btnHangMan);
