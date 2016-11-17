@@ -1,0 +1,7 @@
+1. Play individually or in groups. 
+2. Have the student select a letter of the alphabet.
+3. If the letter is contained in the word/phrase, the group or individual takes another turn guessing a letter.  To reveal a letter (depending on which slide template is used), either:
+4. If the letter is not contained in the word/phrase, click the Try Again button, a portion of the hangman is added. 
+5. The game continues until:
+	- the word/phrase is guessed (all letters are revealed) – WINNER
+	- all the parts of the hangman are displayed – LOSER
