@@ -1,16 +1,20 @@
+package hangman_Project;
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JLabel;
 
-public class HangMan {
+//imported this for the image
+import javax.swing.ImageIcon;
+
+public class HangMan_Project {
 
 	private JFrame frame;
 
@@ -21,7 +25,7 @@ public class HangMan {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					HangMan window = new HangMan();
+					HangMan_Project window = new HangMan_Project();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,7 +37,7 @@ public class HangMan {
 	/**
 	 * Create the application.
 	 */
-	public HangMan() {
+	public HangMan_Project() {
 		initialize();
 	}
 
@@ -49,22 +53,18 @@ public class HangMan {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		//Start the game!!!
 		JButton btnStart = new JButton("Start");
 		btnStart.setBackground(Color.GRAY);
-		//Action for a new window when start button is pressed
 		btnStart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//New frame, input code to call a new class where the game will be stored
-				Game nw = new Game();
-				nw.NewScreen();
+				//action for opening a new window to play the game
+				GameBoard newGame = new GameBoard();
 			}
 		});
 		btnStart.setFont(new Font("Castellar", Font.BOLD, 15));
 		btnStart.setBounds(176, 208, 99, 41);
 		frame.getContentPane().add(btnStart);
 		
-		//Tutorial for people who have never played
 		JButton btnNewButton = new JButton("Tutorial");
 		btnNewButton.setBackground(Color.GRAY);
 		btnNewButton.setFont(new Font("Castellar", Font.BOLD, 10));
@@ -87,18 +87,15 @@ public class HangMan {
 		btnNewButton.setBounds(318, 209, 106, 41);
 		frame.getContentPane().add(btnNewButton);
 		
-		//Hang Man title button 
-		//Will refresh when clicked (undecided)
 		JButton btnHangMan = new JButton("Hang Man");
 		btnHangMan.setBackground(Color.GRAY);
 		btnHangMan.setFont(new Font("Castellar", Font.BOLD, 20));
-		btnHangMan.setBounds(10, 11, 178, 46);
+		btnHangMan.setBounds(10, 11, 177, 46);
 		frame.getContentPane().add(btnHangMan);
 		
 		JLabel label = new JLabel("");
 		label.setForeground(Color.BLACK);
-		//Location for the background image
-		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\SER215_Project\\img\\home.png"));
+		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\SER215_Project\\images\\home.png"));
 		label.setBounds(0, 0, 434, 261);
 		frame.getContentPane().add(label);
 	}
