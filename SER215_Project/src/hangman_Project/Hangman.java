@@ -16,3 +16,4 @@ public class Hangman extends JLabel{
 	private String path;
 	private BufferedImage image;
 }
+
