@@ -65,7 +65,7 @@ public class HangMan {
 		frame.getContentPane().add(btnStart);
 		
 		//Tutorial for people who have never played
-		JButton btnNewButton = new JButton("Tutorial");
+		JButton btnNewButton = new JButton("How To");
 		btnNewButton.setBackground(Color.GRAY);
 		btnNewButton.setFont(new Font("Castellar", Font.BOLD, 10));
 		btnNewButton.addActionListener(new ActionListener() {
