@@ -3,6 +3,8 @@ package hangman_Project;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
+import javax.swing.JLabel;
+
 public class LetterTile extends JLabel{
 	//Letter displayed on tile
 	private final char letterImage;

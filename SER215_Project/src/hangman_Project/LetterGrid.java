@@ -3,6 +3,8 @@ package hangman_Project;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 
+import javax.swing.JPanel;
+
 
 public class LetterGrid extends JPanel{
 	//Number of columns

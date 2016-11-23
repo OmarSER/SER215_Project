@@ -2,6 +2,8 @@ package hangman_Project;
 
 import java.awt.image.BufferedImage;
 
+import javax.swing.JLabel;
+
 public class Hangman extends JLabel{
 	private final int prefferedWidth;
 	private final int prefferedHeight;
