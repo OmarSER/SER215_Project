@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 
+@SuppressWarnings("serial")
 public class LetterGrid extends JPanel{
 	//Number of columns
 	private final int gridColumns;

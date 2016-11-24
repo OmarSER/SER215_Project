@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JLabel;
 
+@SuppressWarnings("serial")
 public class LetterTile extends JLabel{
 	//Letter displayed on tile
 	private final char letterImage;
