@@ -34,7 +34,4 @@ public class LetterGrid extends JPanel{
 	{
 		this("selectedWord", "images/", ".png");
 	}
-	
-	//we gotta finish
-
 }
