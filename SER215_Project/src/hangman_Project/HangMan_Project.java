@@ -96,6 +96,11 @@ public class HangMan_Project {
 		
 		JLabel label = new JLabel("");
 		label.setForeground(Color.BLACK);
+		/**
+		 * This path is for when we started to learn how to import an image
+		 * This path is from our local computer
+		 * if you want to see the limbo image, copy and paste the location where the home image is stored in your computer 
+		 * */
 		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\SER215_Project\\images\\home.png"));
 		label.setBounds(0, 0, 434, 261);
 		frame.getContentPane().add(label);
