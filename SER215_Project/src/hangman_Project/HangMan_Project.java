@@ -96,7 +96,7 @@ public class HangMan_Project {
 		
 		JLabel label = new JLabel("");
 		label.setForeground(Color.BLACK);
-		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\images\\home.png"));
+		label.setIcon(new ImageIcon("C:\\Users\\FramedWand\\Desktop\\SER215_Project\\SER215_Project\\images\\home.png"));
 		label.setBounds(0, 0, 434, 261);
 		frame.getContentPane().add(label);
 	}
