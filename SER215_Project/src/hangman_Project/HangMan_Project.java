@@ -1,5 +1,6 @@
 package hangman_Project;
 
+
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -14,6 +15,10 @@ import javax.swing.JLabel;
 //imported this for the image
 import javax.swing.ImageIcon;
 
+/**
+ * According to the professor, we didn't need to worry about the server
+ * since we were only in a group of 2.
+ * */
 public class HangMan_Project {
 
 	private JFrame frame;
@@ -106,4 +111,3 @@ public class HangMan_Project {
 		frame.getContentPane().add(label);
 	}
 }
-
