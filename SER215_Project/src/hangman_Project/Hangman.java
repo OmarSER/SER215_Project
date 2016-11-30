@@ -94,3 +94,4 @@ public class Hangman extends JLabel{
 		g.drawImage(image, 0, 0, prefferedWidth, prefferedHeight, null);
 	}
 }
+
