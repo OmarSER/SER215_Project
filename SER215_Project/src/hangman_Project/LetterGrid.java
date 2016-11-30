@@ -34,4 +34,6 @@ public class LetterGrid extends JPanel{
 	{
 		this("selectedWord", "images/", ".png");
 	}
+	
+	//why cant i commit
 }
