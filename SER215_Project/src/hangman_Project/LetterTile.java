@@ -103,7 +103,7 @@ public class LetterTile extends JLabel{
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		g.drawImage(image, 0, 0, prefferedWidth, prefferedHeight, null);
+		g.drawImage(image, -10, -10, prefferedWidth, prefferedHeight, null);
 	}
 
 }

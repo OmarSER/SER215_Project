@@ -40,11 +40,12 @@ public class LetterGrid extends JPanel{
 	public LetterGrid(String insertWord, String imageDirectory, String imageType)
 	{
 		// TODO Auto-generated constructor stub
-		gridColumns = 10;
+		gridColumns = 13;
 		gridRows = 2;
 		
 		letterGridLayout = new GridLayout(gridRows, gridColumns);
-		letterGridLayout.setVgap(5);
+		letterGridLayout.setVgap(12);
+		letterGridLayout.setHgap(5);
 		size = gridRows * gridColumns;
 		
 		directoryImage = imageDirectory;
@@ -54,7 +55,7 @@ public class LetterGrid extends JPanel{
 		selectedWord = insertWord;
 		
 		//Centered grid
-		setBorder(BorderFactory.createEmptyBorder(5, 17, 5, 5));
+		setBorder(BorderFactory.createEmptyBorder(10, 17, 10, 10));
 		setLayout(letterGridLayout);
 		loadGrid();
 	}
