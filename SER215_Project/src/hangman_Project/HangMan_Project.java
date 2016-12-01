@@ -61,6 +61,7 @@ public class HangMan_Project {
 		JButton btnStart = new JButton("Start");
 		btnStart.setBackground(Color.GRAY);
 		btnStart.addActionListener(new ActionListener() {
+			@SuppressWarnings("unused")
 			public void actionPerformed(ActionEvent e) {
 				//action for opening a new window to play the game
 				GameBoard newGame = new GameBoard();
